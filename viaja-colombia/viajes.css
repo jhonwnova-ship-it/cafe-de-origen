@@ -1,107 +1,109 @@
-body{
+body {
     font-family: 'Courier New', Courier, monospace;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
-.encabezado{
+
+.encabezado {
     background-color: aqua;
     color: beige;
     padding: 15px;
     text-align: center;
     margin-bottom: 20px;
-
 }
-.encabezado h1{
+
+.encabezado h1 {
     font-size: 2.3rem;
-
-
-}
-.menu{
-display: flex;
-flex-direction: column;
-gap:8px;
-
-
 }
 
-.menu a{
-    color: red ;
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu a {
+    color: red;
     text-decoration: none;
-    background-color: write;
+    background-color: white;
     padding: 10px;
     border-radius: 6px;
 }
-.contenido{
-    background-color:yellow ;
+
+.contenido {
+    background-color: yellow;
     padding: 20px;
     display: flex;
     flex-direction: column;
-
     gap: 15px;
-    
-
 }
-.destino{
+
+.destino {
     background-color: aquamarine;
+    border: 2px solid blanchedalmond;
     border-radius: 8px;
-    border-color: blanchedalmond;
     padding: 15px;
     box-shadow: 0 2px 6px black;
 }
-.imagen{
+
+.imagen {
     width: 100%;
     max-width: 100%;
     height: 250px;
     border-radius: 8px;
     object-fit: cover;
 }
-.boton{
+
+.boton {
     width: 100%;
     padding: 10px;
     border: none;
     background-color: blueviolet;
     color: bisque;
     border-radius: 8px;
-}
-@media(min-width:764px){
-.menu{
-    flex-direction: row;
-    justify-content: center;
-
-}
-.menu a{
-    width: 120px;
-}
-.encabezado h1{
-    font-size: 2 .5rem;
-
-}
-.contenido{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    
-}
-.contenido h3{
-    font-size: 1.2rem;
+    cursor: pointer;
 }
 
+@media (min-width: 764px) {
+    .menu {
+        flex-direction: row;
+        justify-content: center;
+    }
 
+    .menu a {
+        width: 120px;
+        text-align: center;
+    }
+
+    .encabezado h1 {
+        font-size: 2.5rem;
+    }
+
+    .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenido h3 {
+        font-size: 1.2rem;
+    }
 }
-@media (min-width:1024px) {
-    .menu a{
+
+@media (min-width: 1024px) {
+    .menu a {
         width: 150px;
     }
-    .encabezado h1{
-        font-size: 2.9rem;
 
+    .encabezado h1 {
+        font-size: 2.9rem;
     }
-   
-    .boton h3{
+
+    .boton h3 {
         font-size: 1.2rem;
-        
     }
-    .contenido{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
+
+    .contenido {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
